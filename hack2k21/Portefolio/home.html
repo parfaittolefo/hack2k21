@@ -1,0 +1,73 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="md:flex md:justify-center">
+  <main class="p-6 pt-10 lg:pt-0 max-w-[900px]">
+    <div class="pb-12 mt-5">
+<div class="text-xl py-1">Hey there 👋</div>
+<div class="text-5xl font-bold">I'm Manuel Ernesto</div>
+<div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+<div class="py-2">
+<text class="text-lg">
+  I made this template for everyone who needs to create a personal website easily and quickly. This template includes Project Section, CV Section, Store, Paginated Blog, RSS Feed, SEO Friendly, Responsive Desing and 29 Visual themes. I hope you find it useful!
+  </text>
+</div>
+</div>
+<div>
+<div class="text-3xl w-full font-bold mb-2">My last projects &lt;/&gt;</div>
+</div>
+
+
+<!--A poste div-->
+<div class="divider my-0"></div><div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+<a href="#" target="_blank">
+<div class="hero-content flex-col md:flex-row">
+  <img  class="max-w-full md:max-w-[13rem] rounded-lg" src="{% static '../static/post_img.webp' %}" alt="Demo Post 2">
+<div class="grow w-full">
+<h1 class="text-xl font-bold">
+  Demo Project 1 
+</h1>
+<p class="py-1 text-1xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="card-actions justify-end">
+  
+</div>
+</div>
+</div>
+</a>
+</div><div class="divider my-0"></div><div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+</a>
+</div>
+<!--End for a post-->
+
+<!--Start for blog post-->
+<div>
+<div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+
+<!--Start for a blog element -->
+</div><div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+</a>
+</div>
+<div class="divider my-0"></div><div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+<a href="/blog/post2" target="_self">
+<div class="hero-content flex-col md:flex-row">
+<!--<img src="post_img.webp" alt="Demo Post 2" class="max-w-full md:max-w-[13rem] rounded-lg">-->
+<img  class="max-w-full md:max-w-[13rem] rounded-lg" src="{% static 'post_img.webp' %}" alt="Demo Post 2">
+<div class="grow w-full">
+<h1 class="text-xl font-bold">
+  Demo Post 2
+</h1>
+<p class="py-1 text-1xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+</div>
+</div>
+</a>
+<div class="divider my-0"></div>
+  </main>
+</div>
+<!--End for a blog element -->
+<div class="pb-2">
+  &copy; {{year}} hack2k21. All rigth reserved.
+</div>
+{% endblock %}

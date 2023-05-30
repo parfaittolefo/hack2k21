@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="md:flex md:justify-center"> <!--All project container-->
+  <main class="p-6 pt-10 lg:pt-0 max-w-[900px]">
+<div>
+<div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+</div>
+
+<!--Start of a project element-->
+<div class="divider my-0"></div>
+<div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+<a href="#" target="_blank">
+<div class="hero-content flex-col md:flex-row">
+<img  class="max-w-full md:max-w-[13rem] rounded-lg" src="{% static 'post_img.webp' %}" alt="Project 1">
+<div class="grow w-full">
+<h1 class="text-xl font-bold">
+  Demo Project 1
+  <div class="badge badge-secondary mx-2">NEW</div>
+</h1>
+<p class="py-1 text-1xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="card-actions justify-end">
+</div>
+</div>
+</div>
+</a>
+<div class="divider my-0"></div>
+<!--End of a project element-->
+
+<!--Start of a project element-->
+<div class="divider my-0"></div>
+<div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+<a href="#" target="_blank">
+<div class="hero-content flex-col md:flex-row">
+<img  class="max-w-full md:max-w-[13rem] rounded-lg" src="{% static 'post_img.webp' %}" alt="Project 1">
+<div class="grow w-full">
+<h1 class="text-xl font-bold">
+  Demo Project 1
+  <div class="badge badge-secondary mx-2">NEW</div>
+</h1>
+<p class="py-1 text-1xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="card-actions justify-end">
+</div>
+</div>
+</div>
+</a>
+<div class="divider my-0"></div>
+<!--End of a project element-->
+
+  </main>
+  
+</div>
+
+<div class="pb-2">
+  &copy; {{year}} hack2k21. All rigth reserved.
+</div>
+{% endblock %}

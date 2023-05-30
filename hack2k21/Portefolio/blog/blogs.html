@@ -1,0 +1,54 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="md:flex md:justify-center">
+  <main class="p-6 pt-10 lg:pt-0 max-w-[900px]">
+  <ul>
+   <!--Start of a blog element--> 
+<div class="divider my-0"></div>
+<div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+<a href="{% url 'post'  %}" target="_self">
+<div class="hero-content flex-col md:flex-row">
+  <img  class="max-w-full md:max-w-[13rem] rounded-lg" src="{% static 'post_img.webp' %}" alt="Post 1">
+<div class="grow w-full">
+<h1 class="text-xl font-bold">
+  Demo Post 1
+</h1>
+<p class="py-1 text-1xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="card-actions justify-end"> 
+</div>
+</div>
+</div>
+</a>
+</div><div class="divider my-0"></div>
+<!--End of a blog element-->
+
+
+
+  <!--Start of a blog element--> 
+  <div class="divider my-0"></div>
+  <div class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+  <a href="{% url 'post'  %}" target="_self">
+  <div class="hero-content flex-col md:flex-row">
+    <img  class="max-w-full md:max-w-[13rem] rounded-lg" src="{% static 'post_img.webp' %}" alt="Post 1">
+  <div class="grow w-full">
+  <h1 class="text-xl font-bold">
+    Demo Post 1
+  </h1>
+  <p class="py-1 text-1xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div class="card-actions justify-end"> 
+  </div>
+  </div>
+  </div>
+  </a>
+  </div><div class="divider my-0"></div>
+  <!--End of a blog element-->
+</ul><div class="flex justify-between">
+</div>
+  </main>
+</div>
+<div class="pb-2">
+  &copy; {{year}} hack2k21. All rigth reserved.
+</div>
+{% endblock %}
